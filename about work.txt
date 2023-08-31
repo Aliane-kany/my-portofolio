@@ -1,0 +1,81 @@
+<section id="Works">
+    <div class="cont work-wraper">
+        <div><h4>My Work</h4></div>
+        <div><h2>Recent Project</h2></div>
+        <div class="work-card-conainer">
+            <div class="work-card">
+                <div>
+                    <img src="myworkpic.JPG"alt="myworkpic">
+                </div>
+                <h3>website Design</h3>
+                <h4>web design,app Design</h4>
+            </div>
+            <div class="work-card">
+                <div>
+                    <img src="myworkpic.JPG"alt="myworkpic">
+                </div>
+                <h3>website Design</h3>
+                <h4>web design,app Design</h4>
+            </div>
+            <div class="work-card">
+                <div>
+                    <img src="myworkpic.JPG"alt="myworkpic">
+                </div>
+                <h3>website Design</h3>
+                <h4>web design,app Design</h4>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+/* ====================  My Work ============== */
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.work-wraper{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+.work-card-conainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.work-card{
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+.work-card h4{
+    color: black;
+}
+.work-card h3{
+    color: black;
+}
+
+/* ============ medi screen for tablet mode============ */
+
+@media screen AND (max-width: 1024px) {
+    .work-card-conainer{
+    grid-template-columns: repeat(2,1fr);
+}
+/* ============ medi screen for tablet mode============ */
+
+@media screen AND (max-width: 600px) {
+    .work-card-conainer{
+    grid-template-columns: repeat(1,1fr);
+}
+
+}
+
+/* =================  end of work =============================== */
